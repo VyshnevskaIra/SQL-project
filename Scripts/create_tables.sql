@@ -1,4 +1,4 @@
-# --КРОК 1. СТВОРЕННЯ ТАБЛИЦЬ В БАЗІ ДАНИИХ
+--КРОК 1. СТВОРЕННЯ ТАБЛИЦЬ В БАЗІ ДАНИИХ
 
 CREATE TABLE installment_plan
 (
@@ -37,8 +37,8 @@ references installment_plan (contract_number,merchant_id)
 alter table payments add constraint FKpmerchant_id foreign key (merchant_id)
 	references merchants (merchant_id)
 
-# --КРОК 2. ІМПОРТ ДАНИХ
-## --перевірка
+--КРОК 2. ІМПОРТ ДАНИХ
+--перевірка
 select * from installment_plan
 
 select * from payments
