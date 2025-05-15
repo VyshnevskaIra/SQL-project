@@ -1,0 +1,29 @@
+# Ignore Excel temporary and backup files
+~$*
+*.bak
+*.tmp
+
+# Ignore system files (macOS/Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore Python or Jupyter-related (на випадок, якщо будеш щось допрацьовувати)
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+
+# Ignore environment files (якщо будеш створювати віртуальне середовище)
+.env
+.venv/
+venv/
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+*.code-workspace
+
+# Optional: ignore exported reports (якщо дуже важкі і не обов’язково тримати в репо)
+data/results/*.xlsx
+
+# Optional: якщо не хочеш зберігати вихідні дані
+# data/*.xlsx
