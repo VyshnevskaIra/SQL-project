@@ -1,6 +1,6 @@
 --КРОК 3. РОЗРОБКА ЗВІТІВ (SQL-ЗАПИТІВ)
 
---I.2. SQL-запрос - вибір даних про платежі контракту розстрочки
+--I.2. SQL-запит - вибір даних про платежі контракту розстрочки
 create function my_period(@begin_date date,@end_date date) returns @month_period table(p_year smallint,p_month tinyint)
 begin
 declare @cur_date date
